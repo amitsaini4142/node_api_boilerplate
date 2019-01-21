@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var appRouter = require('./routes/index');
-
+//amit
 require('./utils/mongo');
 
 var app = express();
