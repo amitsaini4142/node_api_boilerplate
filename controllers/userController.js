@@ -28,9 +28,6 @@ function registerUser(req, res, next) {
     });
 }
 function fetchUser(req, res, next) {
-    // if(!req.body.id){
-    //     return res.status(400).send({error:true,message:'Required Params Missing'})
-    // }
     userModel.find()
     .then((users) => {
         res.send({data:users})
