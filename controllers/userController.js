@@ -24,7 +24,6 @@ function registerUser(req, res, next) {
         res.send({message:'User Registered Successfully.'});
     })
     .catch((err) => {
-        console.log(err,'hhhhhhhhhhhhhhhhhhhh');
         res.status(422).send({error:true,message:'Error Registering User'});
     });
 }
@@ -37,7 +36,6 @@ function fetchUser(req, res, next) {
         res.send({data:users})
     })
     .catch((err) => {
-        console.log(err,'hhhhhhhhhhhhhhhhhhhh');
         res.status(422).send({error:true,message:'Error Fetching User'});
     });
 }
